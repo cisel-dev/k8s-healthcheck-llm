@@ -27,7 +27,6 @@
 
 - **Step 1**: Create a Python virtual environment (optional but recommended):
   ```bash
-  cd kubernetes/healthcheck
   python3 -m venv env
   source env/bin/activate
   pip install -r requirements.txt
@@ -40,7 +39,7 @@
 1. **Run the Script**:
    - Execute the script to start the dynamic Kubernetes diagnostic process:
      ```bash
-     python k8s_agent_v2.py
+     python k8s_agent.py
      ```
 
 2. **Script Output**:
