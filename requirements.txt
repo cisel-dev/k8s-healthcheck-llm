@@ -1,0 +1,9 @@
+requests
+pandas
+tabulate
+langchain-community
+langchain-openai
+python-dotenv
+openai
+urllib3 
+rich
