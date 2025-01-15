@@ -7,7 +7,7 @@ import urllib3
 # Disable warnings for unverified certificates
 urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 
-KUBECONFIG = "/home/cisadm/.kube/c001-ntx-d10"
+KUBECONFIG = "/path/to/your/kubeconfig-file"
 
 # Step 1: Function to execute kubectl commands with error handling
 def execute_kubectl_command(command):
@@ -76,7 +76,7 @@ def interact_with_llm():
             "   - Prioritize recommendations to address the most critical issues first.\n"
             "   - Ensure the table is well-structured and includes actionable insights.\n\n"
             "### Constraints:\n"
-            "- **All commands must include**: `--kubeconfig=/home/cisadm/.kube/c001-ntx-d10` and `--insecure-skip-tls-verify`.\n"
+            "- **All commands must include**: `--kubeconfig=/path/to/your/kubeconfig-file` and `--insecure-skip-tls-verify`.\n"
             "- **Avoid repeating commands** unless new information justifies re-execution.\n"
             "- If a command fails, analyze the error and propose a realistic alternative.\n"
             "- Avoid focusing entirely on a single recurring issue unless it blocks the entire diagnosis.\n\n"
